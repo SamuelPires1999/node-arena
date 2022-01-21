@@ -1,22 +1,8 @@
-## NodeJS All-in-one boilerplate
+## Node Arena
 
-This repository constains a basic NodeJS project configured with:
+This project consists in a Graphql Interface to manage a combat between 2 characters.
 
-- Typescript
-- .env example setup
-- ESLint (AirBnB standard)
-- Prettier
-- Jest Testing Framework (with a semple test)
+## TODO
 
-After you clone this repo you should run `npm install` / `yarn install`
-
-And after that you can run the following scripts:
-
-- start:dev -> runs the project with nodemon
-- start:prod -> runs the build files from the dist folder
-- build -> builds the project for production
-- test -> runs all the tests once
-- test:watch -> runs the testing in watch mode
-- test:coverage -> runs the tests, followed by coverage and outputs a coverage folder
-
-This is the Basic config that i'll be using from now on all my NodeJS Backend / CLI projects.
+ - build a front end interface to build and deploy characters
+ - manage a way to save characters, considering a simple SQlite database

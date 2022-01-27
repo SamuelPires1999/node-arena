@@ -1,9 +1,17 @@
-import type { Character } from './types';
+import type { Character as CharType} from './types';
 
-export const CreateCharacter = ({ name, level, vocation }: Character) => {
-  return {
-    name,
-    level,
-    vocation,
-  };
-};
+export class Character {
+	name: string
+	vocation : string
+	attr: number[]
+	constructor(args:CharType){
+		this.name = args.name
+		this.vocation = args.vocation
+		this.attr = args.attr
+	}
+
+	atack () {
+		return `${this.name} attacked!!`
+	}
+
+}

@@ -1,5 +1,4 @@
-import { CreateCharacter } from './modules/Character/Character';
-import express, { Response } from 'express';
+import express from 'express';
 
 const main = async () => {
   const app = express();
@@ -8,10 +7,6 @@ const main = async () => {
     console.log('server running on "localhost:4000"');
   });
 
-  app.get('/test', (_, res: Response) => {
-    const newCharacter = CreateCharacter({ name: 'Something', level: 10, vocation: 'warrior' });
-    return res.json(newCharacter);
-  });
 };
 
 main().catch(error => {
